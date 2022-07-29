@@ -1,5 +1,4 @@
 import { galleryItems } from './gallery-items.js';
-// Change code below this line
 
 
 
@@ -7,7 +6,6 @@ const galleryContainer = document.querySelector('.gallery')
 const cardGallety = createGalleryItem(galleryItems)
 
 galleryContainer.insertAdjacentHTML('beforeend' ,cardGallety )
-
 
 function createGalleryItem(galleryItems) {
     return galleryItems.map(({preview , original , description}) => {
@@ -34,8 +32,8 @@ const onGalleryContainerClick = (e) => {
   const instance = basicLightbox.create(`
     <img src="${source}"width="800" height="600">`);
 
+
   instance.show();
-};
+}
 
 galleryContainer.addEventListener("click", onGalleryContainerClick);
-

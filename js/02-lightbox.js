@@ -1,5 +1,4 @@
 import { galleryItems } from './gallery-items.js';
-// Change code below this line
 
 const galleryContainer = document.querySelector('.gallery')
 const cardGallety = createGalleryItem(galleryItems)
@@ -17,13 +16,4 @@ function createGalleryItem(galleryItems) {
     .join('')
 }
 
-console.log(galleryItems);
-
-  let gallery = new SimpleLightbox('.gallery a');
-gallery.on('show.simplelightbox', function () {
-	
-});
-
-gallery.on('error.simplelightbox', function (e) {
-	console.log(e); 
-});
+let gallery = new SimpleLightbox('.gallery a');
